@@ -1,0 +1,56 @@
+body {
+  position: relative;
+  height: 100vh; /* Set the body height to the full viewport height */
+  margin: 0; /* Remove default margin */
+}
+
+#search-section {
+  min-height: 100vh; /* Set the minimum height to the full viewport height */
+  background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url(./img/USA.png);
+  background-size: cover; /* Make the background image cover the entire section */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  color: white;
+  text-align: center;
+  display: flex; /* Use flexbox to center the content vertically */
+  flex-direction: column; /* Stack flex items vertically */
+  justify-content: center; /* Center flex items along the main axis */
+  align-items: center; /* Center flex items along the cross axis */
+}
+
+#search-section p {
+  font-size: 20px;
+}
+
+#search-section p, #word-search-form {
+  max-width: 500px;
+}
+
+#results-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 15%;
+}
+
+#no-word-found {
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 33px;
+  padding: 5px 0;
+  background-color: rgb(35, 27, 28);
+  color: white;
+}
+
+/* Typography */
+h1 {
+  font-family: 'Calistoga', sans-serif;
+}
